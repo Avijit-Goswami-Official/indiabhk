@@ -1,0 +1,49 @@
+@import "../../responsive.scss";
+
+.listPage {
+  display: flex;
+  height: 100%;
+
+  @include md {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .listContainer {
+    flex: 3;
+    height: 100%;
+    margin-bottom: 50px;
+
+    @include md {
+        flex: none;
+        height: max-content;
+        margin-bottom: 50px;
+      }
+
+    .wrapper{
+      height: 100%;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding-bottom: 50px;
+      overflow-y: scroll;
+    }
+  }
+  .mapContainer {
+    flex: 2;
+    height: 100%;
+    background-color: #fcf5f3;
+    overflow-y: scroll;
+
+
+    @include md {
+        flex: none;
+        height: max-content;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 200px;
+      }
+    
+  }
+}
