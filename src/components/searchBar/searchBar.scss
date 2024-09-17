@@ -34,6 +34,7 @@
     justify-content: space-between;
     height: 64px;
     gap: 5px;
+    
 
     @include sm {
       flex-direction: column;
@@ -78,20 +79,25 @@
       }
     }
 
-    button {
-      border: none;
-      cursor: pointer;
-      background-color: #fece51;
-      flex: 1;
-
-      @include sm{
-        padding: 10px;
+      .button {
+        border: none;
+        cursor: pointer;
+        background-color: #fece51;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+  
+        @include sm{
+          padding: 10px;
+        }
+  
+        img {
+          width: 24px;
+          height: 24px; 
+        }
       }
-
-      img {
-        width: 24px;
-        height: 24px;
-      }
-    }
+    
   }
 }
