@@ -3,16 +3,16 @@
 .homePage {
   display: flex;
   height: 100%;
-  
-
-  @include sm{
-    height: 100%;
-    overflow-y: scroll;
-    margin-bottom: 50px;
-  }
 
   .textContainer {
     flex: 3;
+
+    @include sm{
+      justify-content: flex-start;
+      overflow-y: scroll;
+      margin-bottom: 50px;
+    }
+
 
     .wrapper {
       padding-right: 100px;
