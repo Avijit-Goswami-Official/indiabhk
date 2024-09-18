@@ -1,6 +1,11 @@
 @import "../../responsive.scss";
 
 .searchBar {
+
+  @include sm{
+    margin-bottom: 50px;
+  }
+
   .type {
 
 
